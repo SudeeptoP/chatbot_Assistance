@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chatbot Assistant</title>
+
+    <!-- 1. Link to the CSS file -->
+    <link rel="stylesheet" href="chatbot.css">
+
+</head>
+<body>
+
+    <!-- Your main website content -->
+    <header>
+        <h1>Welcome to Our Site</h1>
+    </header>
+    <main>
+        <p>Feel free to ask our chatbot assistant any questions you have!</p>
+    </main>
+
+
+    <!-- Chatbot HTML structure -->
+    <div class="chatbot-container">
+        <div id="chatbot" class="chatbot">
+            <div class="chatbot-header">
+                <p><strong>Chat with Us!</strong></p>
+                <span class="chatbot-close-btn">×</span>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="chatbot-message bot-message">Hello! How can I help you today?</div>
+            </div>
+            <form id="chatbot-input-form" class="chatbot-input-form">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div id="chatbot-toggle" class="chatbot-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- 2. Link to the JavaScript file (just before the closing body tag) -->
+    <script src="chatbot.js"></script>
+
+</body>
+</html>
